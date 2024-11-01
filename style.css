@@ -1,0 +1,292 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-size: 12px;
+}
+     
+ body{
+    font-size: 15px;
+    height: 100vh;
+    background-color: #111;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    position: 15px 40px;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: yellow;
+    border: 4px solid yellow;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 39px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: yellow;
+    font-size: 3rem;
+}
+
+button:hover{
+    box-shadow: 0px 0px 0px yellow;
+    transform: scale(1.05);
+
+}
+
+/*ESTILO DO CABEÇALHO*/
+header {
+    position: absolute;
+    top: 0;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    /* gap: 100px; */
+}
+
+header .logo {
+    display: block;
+    width: 144px;
+}
+
+header .logo a img {
+    display: block;
+    width: 100%;
+}
+
+header a {
+    color: #dff70a;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+header .menu-desktop a::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: #fafafa;
+    margin-top: 1rem;
+    transition: width .2s ease;
+}
+
+header .menu-desktop a:hover::after {
+    width: 100%;
+}
+
+header a:hover{
+    color: #fafafa;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+     display: inline-block;
+     padding: 0 100px;
+}
+
+main {
+    overflow: hidden;
+}
+
+/* topo do site */
+section.topo_do_site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/WhatsApp\ Image\ 2024-10-27\ at\ 00.46.15.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.topo_do_site h1, section.topo_do_site p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    text-shadow: 0 0 5px rgba(0,0,0,.6);
+}
+
+section.topo_do_site h1 {
+    font-size: 4rem;
+}
+
+section.topo_do_site h1 span.title {
+    font-size: 4.5rem;
+    color: #fafafa;
+}
+
+section.topo_do_site p {
+    font-size: 2rem;
+}
+
+/*  ESTILO DAS ESPECIALIDADES  */
+
+section.especialidades{
+    padding: 40px 4%;
+    color: yellow;
+}
+
+section.especialidades .flex{
+    gap: 0px;
+}
+
+.especialidades .especialidades-box{
+    color: yellow;
+    border-radius: 15%;
+    padding: 40px;
+    margin-top: 80px;
+    transition: .2s;
+    cursor: pointer;
+
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(194, 207, 7, 0.377);
+}
+
+.especialidades .especialidades-box p{
+    font-size: 18px;
+    color: rgb(253, 253, 4);
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 35px;
+    margin: 5px 0;
+}
+
+/* ESTILO DO SOBRE*/
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: yellow;
+    display: block;
+    font-size: 3rem;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: yellow;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* estilo do portifolio */
+
+section.portifolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: 50% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 70px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 8, 8, 0.507);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* BAIXO */
+
+.img-baixo {
+    width: 400px;
+    height: 300px;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 70px;
+    position: relative;
+    gap: 10px;
+}
+    
+section.baixo .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+/* ESTILO DO RODAPÉ */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
